@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <!-- Site Title-->
+        <title>{{ site_title }}</title>
+        <style>
+            #navi {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333;
+            }
+            
+            #navi li {
+                float: left;
+            }
+            
+            #navi li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            
+            #navi li a:hover {
+                background-color: #111;
+            }
+
+            table.sortable thead {
+              background-color:#eee;
+              color:#666666;
+              font-weight: bold;
+              cursor: default;
+            }
+
+            table.sortable td {
+              text-align: right;
+            }
+            .box{
+                display: none;
+                width: 100%;
+            }
+        
+            a:hover + .box,.box:hover{
+                display: block;
+                position: relative;
+                z-index: 100;
+            }
+        </style>
+        <!-- Sortable tables -->
+        <script src="https://kryogenix.org/code/browser/sorttable/sorttable.js"></script>
+        <!-- Plotly.js -->
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    </head>
+    <body>
+        {{ page_body | safe }}
+    </body>
+</html>
