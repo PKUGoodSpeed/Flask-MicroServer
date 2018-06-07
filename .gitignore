@@ -37,6 +37,7 @@ apps/
 
 *.hdf5
 *.h5
+*.pyc
 
 runFinetuneImagenet/base/*
 runFinetuneImagenet/rank/*
