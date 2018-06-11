@@ -1,0 +1,4 @@
+include miniblog/schema.sql
+graft miniblog/static
+graft miniblog/templates
+global-exclude *.pyc

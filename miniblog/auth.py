@@ -67,7 +67,7 @@ def loadLoggedInUser():
         g.user = None
     else:
         g.user = getDataBase().execute(
-            "SELECT * FROM user WHERE id = ?", (user_id, )).fetchone
+            "SELECT * FROM user WHERE id = ?", (user_id, )).fetchone()
 
 
 # Logout
